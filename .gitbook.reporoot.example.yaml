@@ -1,0 +1,9 @@
+# Copy this file to the root of a larger monorepo (as .gitbook.yaml)
+# when this docs pack lives under docs/gitbook-free-docs/.
+
+root: ./docs/gitbook-free-docs/
+
+structure:
+  readme: README.md
+  summary: SUMMARY.md
+
