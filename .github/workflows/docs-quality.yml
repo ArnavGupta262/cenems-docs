@@ -32,8 +32,6 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --exclude-mail
             .
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
