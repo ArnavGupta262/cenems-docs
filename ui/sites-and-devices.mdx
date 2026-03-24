@@ -1,0 +1,103 @@
+# Sites and Devices
+
+This page explains how portal users provision and maintain site/device inventory.
+
+## Create a Site in the Portal
+
+Primary page: `/sites`
+
+Required values from the current UI form:
+
+- site name
+- latitude
+- longitude
+
+Optional values from the form are stored in site attributes:
+
+- description
+- address
+- timezone metadata
+- contact email
+- contact phone
+- tags
+
+### Site API Shape Used by UI
+
+```json
+{
+  "name": "North Solar Farm",
+  "latitude": 51.5074,
+  "longitude": -0.1278,
+  "attributes": {
+    "description": "Primary utility-scale solar site",
+    "address": "Example address",
+    "timezone": "Europe/London",
+    "contactEmail": "ops@example.com",
+    "contactPhone": "+44-20-0000-0000",
+    "tags": ["solar", "uk"]
+  }
+}
+```
+
+## Add a Device in the Portal
+
+Primary pages: `/sites` and `/devices`
+
+The UI currently submits a create payload compatible with the API router device schema.
+
+Required values:
+
+- `name`
+- `serialNumber`
+- `manufacturer`
+- `model`
+- `firmwareVersion`
+- `installationDate`
+- `siteId`
+- `device_type_id`
+
+### Device API Shape Used by UI
+
+```json
+{
+  "serialNumber": "SN-UK-0001",
+  "manufacturer": "Acme",
+  "model": "EM-200",
+  "firmwareVersion": "v2.1.0",
+  "installationDate": "2026-03-24T00:00:00Z",
+  "name": "Main Meter",
+  "attributes": {
+    "aesKey": "",
+    "AES Key": "",
+    "timezone": "Europe/London"
+  },
+  "siteId": "8f28f66b-9d41-4470-bfcb-9d6880d94231",
+  "device_type_id": "8fb8f73d-e593-4ef6-a09d-76c628bb8ca4",
+  "allow_reading_overwrite": true
+}
+```
+
+## Edit and Delete Behavior
+
+From UI dialogs:
+
+- site edits map to `PATCH /sites/{site_id}`
+- device edits map to `PATCH /devices/{device_id}`
+- site delete maps to `DELETE /sites/{site_id}`
+- device delete maps to `DELETE /devices/{device_id}`
+
+Operational caution:
+
+- deleting sites cascades device deletion.
+- readings are preserved as historical records.
+
+## Best Practices
+
+- Keep serial numbers immutable and consistent with physical labels.
+- Set device-level timezone in attributes when devices report naive timestamps.
+- Do not move devices across sites in bulk workflows unless explicitly supported by process.
+
+## Related API Docs
+
+- [Sites and Devices API](../api/sites-and-devices.mdx)
+- [CSV Import (Sites and Devices)](../api/csv-import-sites-devices.mdx)

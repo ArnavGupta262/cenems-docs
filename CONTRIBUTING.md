@@ -1,38 +1,61 @@
 # Contributing Guide (Client + Internal Teams)
 
-## Editing Rules
+## Documentation Principles
 
-1. Keep pages concise and task-oriented.
-2. Always include request/response examples for API changes.
-3. For behavior changes, include:
-   1. what changed
-   2. who is impacted
-   3. rollout or migration note
-4. Do not remove existing examples unless replacing with a better tested one.
+1. Write for production client execution, not internal code familiarity.
+2. Keep examples copy-paste runnable.
+3. Prefer task-based guidance over endpoint-only narration.
+4. Keep auth guidance explicit (JWT lane and API-key lane).
 
-## Required Updates per Change Type
+## Canonical Entry Points
 
-## Cloud Bridge ingest change
+- `README.mdx`
+- `start-here.mdx`
+- `integration-playbook.mdx`
+- `ui/*`
+- `api/*`
+- `cloud-bridge/*`
 
-Update:
+Legacy `.md` files are move notices and should not hold canonical content.
 
-1. `cloud-bridge/api-reference.md`
-2. `cloud-bridge/quickstart.md` (if request shape changed)
-3. `cloud-bridge/troubleshooting.md` (new failure mode)
+## Required Updates by Change Type
 
-## Device API change
-
-Update:
-
-1. `api/endpoint-reference.md`
-2. `devices/device-model.md` or `devices/device-types-and-configuration.md`
-
-## Mapping behavior change
+### Cloud Bridge ingest behavior changes
 
 Update:
 
-1. `devices/signal-mapping.md`
-2. `devices/workflows.md`
+1. `cloud-bridge/quickstart.mdx`
+2. `cloud-bridge/api-reference.mdx`
+3. `cloud-bridge/payload-contract.mdx`
+4. `cloud-bridge/troubleshooting.mdx`
+
+### Site/Device API schema changes
+
+Update:
+
+1. `api/sites-and-devices.mdx`
+2. `ui/sites-and-devices.mdx`
+3. `integration-playbook.mdx`
+
+### CSV import contract changes
+
+Update:
+
+1. `api/csv-import-sites-devices.mdx`
+2. `integration-playbook.mdx`
+
+### Template/mapping behavior changes
+
+Update:
+
+1. `api/mapping-and-templates.mdx`
+2. `ui/readings-and-operations.mdx`
+
+### Report export changes
+
+Update:
+
+1. `api/reports-and-csv-export.mdx`
 
 ## OpenAPI Snapshot Update
 
@@ -40,11 +63,12 @@ Update generated specs when API surfaces change:
 
 1. `api/generated/api-router-openapi.json`
 2. `api/generated/cloud-bridge-openapi.json`
+3. `api/generated/README.mdx` if file set changes
 
 ## Pull Request Checklist
 
-1. Links are valid.
-2. Examples are runnable.
-3. Status codes and fields match current implementation.
-4. `SUMMARY.md` includes any new pages.
-
+1. All production URLs are correct.
+2. JSON/CSV examples match source implementation.
+3. Auth/header requirements are explicit where needed.
+4. `SUMMARY.md` navigation is updated.
+5. New pages are `.mdx` unless there is a strong reason not to.

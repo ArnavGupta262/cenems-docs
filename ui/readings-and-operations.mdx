@@ -1,0 +1,41 @@
+# Readings and Operations
+
+This page explains how operations users verify telemetry quality from the portal.
+
+## Pages to Use
+
+- `/devices`: inspect a device and view recent readings for one selected device.
+- `/readings`: filter readings by selected sites/devices and inspect full JSON payloads.
+- `/signal-readings`: inspect normalized signal streams.
+- `/templates`: verify template, block, and signal structure.
+
+## Recommended Verification Routine
+
+1. Open `/devices` and confirm the target device exists at the expected site.
+2. Open `/readings` and filter to that device.
+3. Confirm timestamp freshness and payload shape.
+4. Open `/signal-readings` to confirm downstream normalized signals.
+
+## Typical Operational Questions
+
+### Why do I see a device but no readings?
+
+- device exists, but ingestion has not started.
+- Cloud Bridge payload is missing `data.serialNumber`.
+- serial number in payload does not exactly match the device serial.
+- ingestion failed due to schema or duplicate policy.
+
+See: [Cloud Bridge Troubleshooting](../cloud-bridge/troubleshooting.mdx)
+
+### Why are readings present but signals missing?
+
+- template/block/signal mapping is incomplete.
+- mapping slot ambiguity exists and needs explicit slot selection.
+- signal extraction path is incorrect.
+
+See: [Template and Mapping APIs](../api/mapping-and-templates.mdx)
+
+## Operational Safety Notes
+
+- verify organization context before performing write actions.
+- use API-key automation for recurring imports; avoid manual repetitive updates in UI for high volume workloads.

@@ -13,7 +13,7 @@ cp -R docs/gitbook-free-docs/. /path/to/new-docs-repo/
 
 This copies:
 
-1. `README.md`
+1. `README.mdx`
 2. `SUMMARY.md`
 3. `.gitbook.yaml`
 4. all section content
@@ -25,21 +25,21 @@ This copies:
 2. Enable Git Sync to your fresh docs repository.
 3. Ensure GitBook uses:
    1. root: `./`
-   2. readme: `README.md`
+   2. readme: `README.mdx`
    3. summary: `SUMMARY.md`
-4. Publish site and set custom domain if needed.
+4. Publish the site (Basic-plan compatible setup).
 
 Alternative (if you keep this folder nested in a larger repo):
 
 1. Place a repo-root `.gitbook.yaml` with:
    1. `root: ./docs/gitbook-free-docs/`
-   2. `structure.readme: README.md`
+   2. `structure.readme: README.mdx`
    3. `structure.summary: SUMMARY.md`
 
 ## Validation Checklist
 
 1. Sidebar loads exactly as defined in `SUMMARY.md`.
-2. Home page resolves to `README.md`.
+2. Home page resolves to `README.mdx`.
 3. All internal links render correctly.
 4. Code blocks render correctly.
 5. OpenAPI snapshots exist in `api/generated`.

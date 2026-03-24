@@ -1,0 +1,40 @@
+# CenEMS Client Documentation (Production)
+
+Last validated against source code: 2026-03-24
+
+This documentation is written for production client teams using the hosted CenEMS platform.
+The platform is deployed as cloud-hosted services on Kubernetes.
+
+## Production URLs
+
+- UI Portal: `https://portal.central-ems.com`
+- API: `https://api.central-ems.com`
+- Cloud Bridge: `https://cloud-bridge.central-ems.com`
+
+## What This Covers
+
+- How end users operate the platform from the UI.
+- How integration teams create sites and devices through the API.
+- How telemetry is ingested through Cloud Bridge.
+- How to import sites/devices/mappings via CSV.
+- How to verify ingestion and export CSV reports.
+
+## Recommended Reading Order
+
+1. [Start Here](./start-here.mdx)
+2. [UI Guide](./ui/README.mdx)
+3. [Cloud Bridge Quickstart](./cloud-bridge/quickstart.mdx)
+4. [Sites and Devices API](./api/sites-and-devices.mdx)
+5. [CSV Import (Sites and Devices)](./api/csv-import-sites-devices.mdx)
+6. [End-to-End Integration Playbook](./integration-playbook.mdx)
+
+## Integration Model
+
+This documentation uses a dual-lane model:
+
+1. Primary lane: UI + Clerk JWT (best for human users and day-to-day operations).
+2. Automation lane: API keys (best for backend jobs, scheduled imports, partner integrations).
+
+## Support Expectations
+
+If behavior differs from this guide, treat source implementation as the source of truth and open a docs update request using [Contributing Guide](./CONTRIBUTING.md).

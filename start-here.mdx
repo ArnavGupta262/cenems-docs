@@ -1,0 +1,44 @@
+# Start Here
+
+This page gives client teams a practical first-day setup path.
+
+## Step 1: Confirm Access
+
+- You can sign in to `https://portal.central-ems.com`.
+- You can select the correct organization in the organization switcher.
+- Your org role includes write access for sites/devices if you need provisioning.
+
+## Step 2: Choose Your Working Mode
+
+### Mode A: UI-first (recommended for most users)
+
+Use the portal for:
+
+- creating and editing sites/devices
+- viewing readings and signal readings
+- managing templates and mappings
+- running reports and dashboard views
+
+### Mode B: Integration-first (for backend teams)
+
+Use the API/Cloud Bridge for:
+
+- bulk provisioning
+- automated ingestion pipelines
+- periodic CSV import/export workflows
+
+## Step 3: Follow the Core Workflow
+
+1. Create or verify site records.
+2. Create or verify device records and serial numbers.
+3. Push telemetry into Cloud Bridge.
+4. Verify readings in API and portal.
+5. Add mapping (if template/signal extraction is required).
+6. Move high-volume onboarding to CSV import.
+
+## Step 4: Keep This Nearby
+
+- Auth rules: [Authentication and Headers](./api/auth-and-headers.mdx)
+- Device payloads: [Sites and Devices API](./api/sites-and-devices.mdx)
+- Reading payloads: [Cloud Bridge Payload Contract](./cloud-bridge/payload-contract.mdx)
+- CSV import contract: [CSV Import (Sites and Devices)](./api/csv-import-sites-devices.mdx)

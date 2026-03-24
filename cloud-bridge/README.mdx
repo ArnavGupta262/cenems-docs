@@ -1,0 +1,32 @@
+# Cloud Bridge
+
+Base URL: `https://cloud-bridge.central-ems.com`
+
+Cloud Bridge is the production ingestion service for device telemetry payloads keyed by `data.serialNumber`.
+
+Current service implementation does not enforce auth headers directly; secure it through ingress/network controls in production.
+
+## What It Does
+
+- validates payload contract (`serialNumber` required)
+- resolves device/site/org context from serial
+- normalizes timestamps to UTC
+- performs deterministic deduplication
+- persists readings
+- publishes `READINGS.CREATED` events asynchronously
+
+## Key Endpoints
+
+- `POST /upload/reading`
+- `POST /upload/readings/bulk`
+- `GET /device/{serial_number}/info`
+- `GET /schema/device-data`
+- `GET /health`
+- `GET /health/nats`
+
+## Start Here
+
+1. [Quickstart](./quickstart.mdx)
+2. [Payload Contract](./payload-contract.mdx)
+3. [API Reference](./api-reference.mdx)
+4. [Troubleshooting](./troubleshooting.mdx)
