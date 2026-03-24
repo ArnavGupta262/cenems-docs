@@ -6,7 +6,7 @@ Base URL: `https://api.central-ems.com`
 
 ## Import Workflow
 
-1. Download template (`.csv` or `.xlsx`).
+1. Download the CSV template (`.csv`).
 2. Populate rows using the exact contract.
 3. Validate CSV and obtain `session_id`.
 4. Review row classification and errors.
@@ -16,11 +16,12 @@ Base URL: `https://api.central-ems.com`
 ## Endpoints
 
 - `GET /imports/sites-devices/template.csv`
-- `GET /imports/sites-devices/template.xlsx`
 - `POST /imports/sites-devices/validate`
 - `GET /imports/sites-devices/sessions/{session_id}`
 - `PATCH /imports/sites-devices/sessions/{session_id}/rows/{row_index}`
 - `POST /imports/sites-devices/sessions/{session_id}/apply`
+
+CSV import in production accepts only `.csv` files.
 
 ## Required Header Contract
 

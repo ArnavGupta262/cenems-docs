@@ -55,14 +55,6 @@ Update:
 
 1. `api/reports-and-csv-export.md`
 
-## OpenAPI Snapshot Update
-
-Update generated specs when API surfaces change:
-
-1. `api/generated/api-router-openapi.json`
-2. `api/generated/cloud-bridge-openapi.json`
-3. `api/generated/README.md` if file set changes
-
 ## Pull Request Checklist
 
 1. All production URLs are correct.

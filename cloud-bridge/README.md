@@ -13,7 +13,6 @@ Current service implementation does not enforce auth headers directly; secure it
 - normalizes timestamps to UTC
 - performs deterministic deduplication
 - persists readings
-- publishes `READINGS.CREATED` events asynchronously
 
 ## Key Endpoints
 

@@ -26,7 +26,6 @@ This index is grouped by client task.
 ## CSV Import Pipeline
 
 - `GET /imports/sites-devices/template.csv`
-- `GET /imports/sites-devices/template.xlsx`
 - `POST /imports/sites-devices/validate`
 - `GET /imports/sites-devices/sessions/{session_id}`
 - `PATCH /imports/sites-devices/sessions/{session_id}/rows/{row_index}`

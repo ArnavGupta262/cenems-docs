@@ -17,7 +17,6 @@ This copies:
 2. `SUMMARY.md`
 3. `.gitbook.yaml`
 4. all section content
-5. generated OpenAPI snapshots
 
 ## GitBook Setup
 
@@ -42,11 +41,9 @@ Alternative (if you keep this folder nested in a larger repo):
 2. Home page resolves to `README.md`.
 3. All internal links render correctly.
 4. Code blocks render correctly.
-5. OpenAPI snapshots exist in `api/generated`.
 
 ## Optional Post-Migration Hardening
 
 1. Add branch protection on `main`.
 2. Require PR review for docs changes.
 3. Add link-check CI workflow in fresh repo.
-4. Decide update cadence for generated OpenAPI snapshots.
