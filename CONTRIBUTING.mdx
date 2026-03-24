@@ -9,14 +9,12 @@
 
 ## Canonical Entry Points
 
-- `README.mdx`
-- `start-here.mdx`
-- `integration-playbook.mdx`
+- `README.md`
+- `start-here.md`
+- `integration-playbook.md`
 - `ui/*`
 - `api/*`
 - `cloud-bridge/*`
-
-Legacy `.md` files are move notices and should not hold canonical content.
 
 ## Required Updates by Change Type
 
@@ -24,38 +22,38 @@ Legacy `.md` files are move notices and should not hold canonical content.
 
 Update:
 
-1. `cloud-bridge/quickstart.mdx`
-2. `cloud-bridge/api-reference.mdx`
-3. `cloud-bridge/payload-contract.mdx`
-4. `cloud-bridge/troubleshooting.mdx`
+1. `cloud-bridge/quickstart.md`
+2. `cloud-bridge/api-reference.md`
+3. `cloud-bridge/payload-contract.md`
+4. `cloud-bridge/troubleshooting.md`
 
 ### Site/Device API schema changes
 
 Update:
 
-1. `api/sites-and-devices.mdx`
-2. `ui/sites-and-devices.mdx`
-3. `integration-playbook.mdx`
+1. `api/sites-and-devices.md`
+2. `ui/sites-and-devices.md`
+3. `integration-playbook.md`
 
 ### CSV import contract changes
 
 Update:
 
-1. `api/csv-import-sites-devices.mdx`
-2. `integration-playbook.mdx`
+1. `api/csv-import-sites-devices.md`
+2. `integration-playbook.md`
 
 ### Template/mapping behavior changes
 
 Update:
 
-1. `api/mapping-and-templates.mdx`
-2. `ui/readings-and-operations.mdx`
+1. `api/mapping-and-templates.md`
+2. `ui/readings-and-operations.md`
 
 ### Report export changes
 
 Update:
 
-1. `api/reports-and-csv-export.mdx`
+1. `api/reports-and-csv-export.md`
 
 ## OpenAPI Snapshot Update
 
@@ -63,7 +61,7 @@ Update generated specs when API surfaces change:
 
 1. `api/generated/api-router-openapi.json`
 2. `api/generated/cloud-bridge-openapi.json`
-3. `api/generated/README.mdx` if file set changes
+3. `api/generated/README.md` if file set changes
 
 ## Pull Request Checklist
 
@@ -71,4 +69,4 @@ Update generated specs when API surfaces change:
 2. JSON/CSV examples match source implementation.
 3. Auth/header requirements are explicit where needed.
 4. `SUMMARY.md` navigation is updated.
-5. New pages are `.mdx` unless there is a strong reason not to.
+5. New pages are `.md` unless there is a strong reason not to.

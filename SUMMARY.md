@@ -21,5 +21,5 @@
     * [Endpoint Index](api/endpoint-reference.mdx)
     * [Generated OpenAPI Snapshots](api/generated/README.mdx)
   * [End-to-End Integration Playbook](integration-playbook.mdx)
-  * [Migration Checklist](MIGRATION-CHECKLIST.md)
-  * [Contributing Guide](CONTRIBUTING.md)
+  * [Migration Checklist](MIGRATION-CHECKLIST.mdx)
+  * [Contributing Guide](CONTRIBUTING.mdx)
