@@ -38,7 +38,7 @@ Use the API/Cloud Bridge for:
 
 ## Step 4: Keep This Nearby
 
-- Auth rules: [Authentication and Headers](./api/auth-and-headers.mdx)
-- Device payloads: [Sites and Devices API](./api/sites-and-devices.mdx)
-- Reading payloads: [Cloud Bridge Payload Contract](./cloud-bridge/payload-contract.mdx)
-- CSV import contract: [CSV Import (Sites and Devices)](./api/csv-import-sites-devices.mdx)
+- Auth rules: [Authentication and Headers](./api/auth-and-headers.md)
+- Device payloads: [Sites and Devices API](./api/sites-and-devices.md)
+- Reading payloads: [Cloud Bridge Payload Contract](./cloud-bridge/payload-contract.md)
+- CSV import contract: [CSV Import (Sites and Devices)](./api/csv-import-sites-devices.md)

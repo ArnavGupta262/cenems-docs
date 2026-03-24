@@ -21,12 +21,12 @@ The platform is deployed as cloud-hosted services on Kubernetes.
 
 ## Recommended Reading Order
 
-1. [Start Here](./start-here.mdx)
-2. [UI Guide](./ui/README.mdx)
-3. [Cloud Bridge Quickstart](./cloud-bridge/quickstart.mdx)
-4. [Sites and Devices API](./api/sites-and-devices.mdx)
-5. [CSV Import (Sites and Devices)](./api/csv-import-sites-devices.mdx)
-6. [End-to-End Integration Playbook](./integration-playbook.mdx)
+1. [Start Here](./start-here.md)
+2. [UI Guide](./ui/README.md)
+3. [Cloud Bridge Quickstart](./cloud-bridge/quickstart.md)
+4. [Sites and Devices API](./api/sites-and-devices.md)
+5. [CSV Import (Sites and Devices)](./api/csv-import-sites-devices.md)
+6. [End-to-End Integration Playbook](./integration-playbook.md)
 
 ## Integration Model
 
@@ -37,4 +37,4 @@ This documentation uses a dual-lane model:
 
 ## Support Expectations
 
-If behavior differs from this guide, treat source implementation as the source of truth and open a docs update request using [Contributing Guide](./CONTRIBUTING.mdx).
+If behavior differs from this guide, treat source implementation as the source of truth and open a docs update request using [Contributing Guide](./CONTRIBUTING.md).

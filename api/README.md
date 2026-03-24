@@ -14,12 +14,12 @@ This section is focused on client integration tasks required in production.
 
 ## Integration Sequence
 
-1. [Authentication and Headers](./auth-and-headers.mdx)
-2. [Sites and Devices API](./sites-and-devices.mdx)
-3. [Readings Verification API](./readings-and-verification.mdx)
-4. [CSV Import (Sites and Devices)](./csv-import-sites-devices.mdx)
-5. [Template and Mapping APIs](./mapping-and-templates.mdx)
-6. [CSV Export Reports](./reports-and-csv-export.mdx)
+1. [Authentication and Headers](./auth-and-headers.md)
+2. [Sites and Devices API](./sites-and-devices.md)
+3. [Readings Verification API](./readings-and-verification.md)
+4. [CSV Import (Sites and Devices)](./csv-import-sites-devices.md)
+5. [Template and Mapping APIs](./mapping-and-templates.md)
+6. [CSV Export Reports](./reports-and-csv-export.md)
 
 ## API and Cloud Bridge Division of Responsibility
 

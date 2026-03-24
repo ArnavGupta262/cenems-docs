@@ -4,5 +4,5 @@
 root: ./docs/gitbook-free-docs/
 
 structure:
-  readme: README.mdx
+  readme: README.md
   summary: SUMMARY.md

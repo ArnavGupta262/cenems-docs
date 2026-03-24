@@ -99,5 +99,5 @@ Operational caution:
 
 ## Related API Docs
 
-- [Sites and Devices API](../api/sites-and-devices.mdx)
-- [CSV Import (Sites and Devices)](../api/csv-import-sites-devices.mdx)
+- [Sites and Devices API](../api/sites-and-devices.md)
+- [CSV Import (Sites and Devices)](../api/csv-import-sites-devices.md)

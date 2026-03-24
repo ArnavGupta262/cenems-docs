@@ -25,7 +25,7 @@ This page explains how operations users verify telemetry quality from the portal
 - serial number in payload does not exactly match the device serial.
 - ingestion failed due to schema or duplicate policy.
 
-See: [Cloud Bridge Troubleshooting](../cloud-bridge/troubleshooting.mdx)
+See: [Cloud Bridge Troubleshooting](../cloud-bridge/troubleshooting.md)
 
 ### Why are readings present but signals missing?
 
@@ -33,7 +33,7 @@ See: [Cloud Bridge Troubleshooting](../cloud-bridge/troubleshooting.mdx)
 - mapping slot ambiguity exists and needs explicit slot selection.
 - signal extraction path is incorrect.
 
-See: [Template and Mapping APIs](../api/mapping-and-templates.mdx)
+See: [Template and Mapping APIs](../api/mapping-and-templates.md)
 
 ## Operational Safety Notes
 

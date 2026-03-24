@@ -26,7 +26,7 @@ Current service implementation does not enforce auth headers directly; secure it
 
 ## Start Here
 
-1. [Quickstart](./quickstart.mdx)
-2. [Payload Contract](./payload-contract.mdx)
-3. [API Reference](./api-reference.mdx)
-4. [Troubleshooting](./troubleshooting.mdx)
+1. [Quickstart](./quickstart.md)
+2. [Payload Contract](./payload-contract.md)
+3. [API Reference](./api-reference.md)
+4. [Troubleshooting](./troubleshooting.md)

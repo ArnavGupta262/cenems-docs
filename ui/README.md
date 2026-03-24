@@ -30,6 +30,6 @@ For users provisioning infrastructure manually:
 
 ## Related Pages
 
-- [Sites and Devices](./sites-and-devices.mdx)
-- [Readings and Operations](./readings-and-operations.mdx)
-- [Cloud Bridge Quickstart](../cloud-bridge/quickstart.mdx)
+- [Sites and Devices](./sites-and-devices.md)
+- [Readings and Operations](./readings-and-operations.md)
+- [Cloud Bridge Quickstart](../cloud-bridge/quickstart.md)
